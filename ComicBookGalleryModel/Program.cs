@@ -17,6 +17,13 @@ namespace ComicBookGalleryModel
                     IssueNumber = 1,
                     PublishedOn = DateTime.Today
                 });
+                
+                context.ComicBooks.Add(new ComicBook()
+                {
+                    SeriesTitle = "Rocky Balboa",
+                    IssueNumber = 2,
+                    PublishedOn = DateTime.Today
+                });                
 
                 context.SaveChanges();
 
