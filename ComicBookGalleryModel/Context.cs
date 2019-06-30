@@ -5,6 +5,12 @@ namespace ComicBookGalleryModel
 {
     public class Context : DbContext
     {
+        // connectionString: Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ComicBookGallery;Integrated Security=True;MultipleActiveResultSets=True
+        //public Context() : base("ComicBookGallery") or : base("<connectionString>")
+        //{
+
+        //}
+
         public DbSet<ComicBook> ComicBooks { get; set; }
     }
 }
